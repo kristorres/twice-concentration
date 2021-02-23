@@ -1,0 +1,9 @@
+# Finder metadata
+.DS_Store
+
+# npm
+/node_modules/
+
+# Project builds
+/output/app-*.js
+/output/index.html
