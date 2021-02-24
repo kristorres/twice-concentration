@@ -1,0 +1,50 @@
+<style>
+    footer {
+        background-color: white;
+        padding: 20px 32px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    }
+    footer > p {
+        font-family: Rubik, -apple-system, BlinkMacSystemFont, ui-sans-serif, system-ui, "Helvetica Neue", Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.25px;
+        line-height: 1.25;
+        color: #757575;
+    }
+    footer > p > .material-icons {
+        font-size: 1.125rem;
+        vertical-align: text-bottom;
+    }
+    footer a {
+        text-decoration: none;
+        color: #007BFF;
+    }
+    footer a:hover {
+        text-decoration: underline;
+        color: #0056B3;
+    }
+    .pink {
+        color: #FF4081;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        footer {
+            background-color: #424242;
+        }
+        footer > p {
+            color: #A0A0A0;
+        }
+        footer a {
+            color: white !important;
+        }
+    }
+</style>
+
+<footer>
+    <p>
+        <span class="material-icons">code</span> with
+        <span class="material-icons pink">favorite</span> by a
+        <a href="mailto:kristorresdayo@gmail.com">ONCE</a>.
+    </p>
+</footer>

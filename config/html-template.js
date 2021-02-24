@@ -25,7 +25,8 @@ const Domain = Object.freeze({
 });
 
 const URL = Object.freeze({
-    Rubik: `${Domain.GoogleFonts}/css?family=Rubik:700&display=swap`
+    Rubik: `${Domain.GoogleFonts}/css?family=Rubik:400,700&display=swap`,
+    MaterialIcons: `${Domain.GoogleFonts}/icon?family=Material+Icons`
 });
 
 const htmlTemplate = (options) => `<!DOCTYPE html>
@@ -51,6 +52,7 @@ const htmlTemplate = (options) => `<!DOCTYPE html>
 
         <!-- Google Fonts CSS -->
         <link rel="stylesheet" type="text/css" href="${URL.Rubik}"/>
+        <link rel="stylesheet" type="text/css" href="${URL.MaterialIcons}"/>
 
         <!-- Global styles -->
         <style>

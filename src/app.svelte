@@ -1,4 +1,5 @@
 <script>
+    import Footer from "./components/footer.svelte";
     import TitleBar from "./components/title-bar.svelte";
 </script>
 
@@ -29,5 +30,6 @@
         <TitleBar/>
         <main class="game-table">
         </main>
+        <Footer/>
     </div>
 </root>
