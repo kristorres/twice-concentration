@@ -9,10 +9,17 @@
         background-color: #CFD8DC;
         min-height: 100vh;
     }
+    .layout > .game-table {
+        flex: 1;
+        background-color: #309B5D;
+    }
 
     @media (prefers-color-scheme: dark) {
         .layout {
             background-color: #263238;
+        }
+        .layout > .game-table {
+            background-color: #123C15;
         }
     }
 </style>
@@ -20,5 +27,7 @@
 <root>
     <div class="layout">
         <TitleBar/>
+        <main class="game-table">
+        </main>
     </div>
 </root>
