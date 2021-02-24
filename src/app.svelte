@@ -1,3 +1,7 @@
+<script>
+    import TitleBar from "./components/title-bar.svelte";
+</script>
+
 <style>
     .layout {
         display: flex;
@@ -15,5 +19,6 @@
 
 <root>
     <div class="layout">
+        <TitleBar/>
     </div>
 </root>

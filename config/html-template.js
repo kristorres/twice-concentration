@@ -9,7 +9,8 @@ const app = {
         "memory",
         "card game",
         "web app"
-    ]
+    ],
+    themeColor: "#FF4081"
 };
 
 const viewportAttributes = [
@@ -18,6 +19,14 @@ const viewportAttributes = [
     "width=device-width",
     "shrink-to-fit=no"
 ];
+
+const Domain = Object.freeze({
+    GoogleFonts: "https://fonts.googleapis.com"
+});
+
+const URL = Object.freeze({
+    Rubik: `${Domain.GoogleFonts}/css?family=Rubik:700&display=swap`
+});
 
 const htmlTemplate = (options) => `<!DOCTYPE html>
 
@@ -34,8 +43,14 @@ const htmlTemplate = (options) => `<!DOCTYPE html>
         <meta name="description" content="${app.description}"/>
         <meta name="keywords" content="${app.keywords.join(", ")}"/>
 
+        <!-- Google Chrome for Android toolbar color -->
+        <meta name="theme-color" content="${app.themeColor}"/>
+
         <!-- Web page title -->
         <title>${app.name}</title>
+
+        <!-- Google Fonts CSS -->
+        <link rel="stylesheet" type="text/css" href="${URL.Rubik}"/>
 
         <!-- Global styles -->
         <style>
