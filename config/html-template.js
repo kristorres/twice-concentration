@@ -1,6 +1,7 @@
+import {description, homepage} from "../package.json";
+
 const app = {
     name: "Twice Concentration",
-    description: "The classical card game that revolves around Twice.",
     keywords: [
         "Kris Torres",
         "Twice",
@@ -10,6 +11,10 @@ const app = {
         "card game",
         "web app"
     ],
+    twitter: {
+        handle: "@ohayoukris",
+        bannerURL: `${homepage}/images/banner.png`
+    },
     themeColor: "#FF4081",
     iconURL: "images/logo.png"
 };
@@ -42,8 +47,22 @@ const htmlTemplate = (options) => `<!DOCTYPE html>
 
         <!-- Basic info -->
         <meta name="author" content="Kris Torres"/>
-        <meta name="description" content="${app.description}"/>
+        <meta name="description" content="${description}"/>
         <meta name="keywords" content="${app.keywords.join(", ")}"/>
+
+        <!-- Twitter Cards -->
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:creator" content="${app.twitter.handle}"/>
+        <meta name="twitter:title" content="${app.name}"/>
+        <meta name="twitter:image" content="${app.twitter.bannerURL}"/>
+        <meta name="twitter:description" content="${description}"/>
+
+        <!-- Open Graph protocol -->
+        <meta property="og:title" content="${app.name}"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="${homepage}"/>
+        <meta property="og:image" content="${app.twitter.bannerURL}"/>
+        <meta property="og:description" content="${description}"/>
 
         <!-- Google Chrome for Android toolbar color -->
         <meta name="theme-color" content="${app.themeColor}"/>
