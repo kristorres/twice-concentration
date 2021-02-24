@@ -10,7 +10,8 @@ const app = {
         "card game",
         "web app"
     ],
-    themeColor: "#FF4081"
+    themeColor: "#FF4081",
+    iconURL: "images/logo.png"
 };
 
 const viewportAttributes = [
@@ -63,6 +64,10 @@ const htmlTemplate = (options) => `<!DOCTYPE html>
                 margin: 0;
             }
         </style>
+
+        <!-- Icons -->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+        <link rel="apple-touch-icon" type="image/png" href="${app.iconURL}"/>
 
     </head>
 
