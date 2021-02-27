@@ -1,11 +1,11 @@
 <style>
     footer {
-        background-color: white;
+        background-color: var(--theme-surface);
         padding: 20px 32px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
     }
     footer > p {
-        font-family: Rubik, -apple-system, BlinkMacSystemFont, ui-sans-serif, system-ui, "Helvetica Neue", Arial, sans-serif;
+        font-family: var(--font-text);
         font-size: 16px;
         font-weight: 400;
         letter-spacing: 0.25px;
@@ -29,9 +29,6 @@
     }
 
     @media (prefers-color-scheme: dark) {
-        footer {
-            background-color: #424242;
-        }
         footer > p {
             color: #A0A0A0;
         }

@@ -75,14 +75,7 @@ const htmlTemplate = (options) => `<!DOCTYPE html>
         <link rel="stylesheet" type="text/css" href="${URL.MaterialIcons}"/>
 
         <!-- Global styles -->
-        <style>
-            :root {
-                color-scheme: light dark;
-            }
-            body {
-                margin: 0;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="global.css"/>
 
         <!-- Icons -->
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
