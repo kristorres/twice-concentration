@@ -10,7 +10,7 @@
         background-color: #CFD8DC;
         min-height: 100vh;
     }
-    .layout > .game-table {
+    .game-table {
         flex: 1;
         background-color: #309B5D;
     }
@@ -19,7 +19,7 @@
         .layout {
             background-color: #263238;
         }
-        .layout > .game-table {
+        .game-table {
             background-color: #123C15;
         }
     }
