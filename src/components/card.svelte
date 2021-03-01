@@ -5,7 +5,7 @@
 
     $: background = card.isFaceUp
         ? `background-image: url("${card.url}")`
-        : "background: radial-gradient(#1A64D7, #003BA5)";
+        : "background: radial-gradient(#6691FF, #1A64D7)";
 </script>
 
 <style>
@@ -19,7 +19,7 @@
         pointer-events: none;
     }
     .matched {
-        opacity: 0.75;
+        opacity: 0.5;
         box-shadow: none;
     }
 </style>
