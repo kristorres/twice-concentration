@@ -44,6 +44,10 @@
         playerCanFlipACard = false;
         setTimeout(resetFlippedCards, 1500);
     };
+
+    const resetGame = () => {
+        concentrationStore.reset();
+    };
 </script>
 
 <style>
@@ -65,6 +69,26 @@
         font-weight: 400;
         text-align: center;
         color: white;
+    }
+    button {
+        display: block;
+        background-color: #ED1C27;
+        border: none;
+        border-radius: 8px;
+        font-family: Bungee, "Helvetica Neue", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        color: white;
+        -webkit-user-select: none;
+        user-select: none;
+        padding: 8px 16px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+        margin: 24px auto;
+        transition: box-shadow 0.25s ease-in-out;
+    }
+    button:hover {
+        box-shadow: none;
     }
     .card-grid {
         display: grid;
@@ -90,6 +114,7 @@
 <main class="game-table">
     <h1>Concentration</h1>
     <h2># of Flips: {$concentrationStore.flipCount}</h2>
+    <button on:click={resetGame}>Reset Game</button>
     <div class="card-grid">
         {#each $concentrationStore.cards as card, index}
             <Card

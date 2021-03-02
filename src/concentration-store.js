@@ -21,21 +21,9 @@ const images = [
     "logo"
 ];
 
-const cards = [];
-for (const image of images) {
-    const card = {
-        url: `images/cards/${image}.jpg`,
-        isFaceUp: false,
-        isMatched: false
-    };
-    cards.push(card);
-    cards.push({...card});
-}
-shuffle(cards);
-
 const createConcentrationStore = () => {
     const {subscribe, update} = writable({
-        cards,
+        cards: [],
         flipCount: 0
     });
 
@@ -79,10 +67,33 @@ const createConcentrationStore = () => {
                     "flipCount.$apply": (flipCount) => flipCount + 1
                 }
             )
+        ),
+        reset: () => update(
+            (game) => {
+                const cards = [];
+                for (const image of images) {
+                    const card = {
+                        url: `images/cards/${image}.jpg`,
+                        isFaceUp: false,
+                        isMatched: false
+                    };
+                    cards.push(card);
+                    cards.push({...card});
+                }
+                shuffle(cards);
+                return immutableUpdate(
+                    game,
+                    {
+                        "cards.$set": cards,
+                        "flipCount.$set": 0
+                    }
+                );
+            }
         )
     };
 };
 
 const concentrationStore = createConcentrationStore();
+concentrationStore.reset();
 
 export default concentrationStore;
