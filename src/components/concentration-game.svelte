@@ -52,6 +52,20 @@
         background-color: #309B5D;
         padding: 32px;
     }
+    h1 {
+        font-family: Bungee, "Helvetica Neue", sans-serif;
+        font-size: 8vw;
+        font-weight: 400;
+        text-align: center;
+        color: white;
+    }
+    h2 {
+        font-family: "Squada One", "Helvetica Neue", sans-serif;
+        font-size: 60px;
+        font-weight: 400;
+        text-align: center;
+        color: white;
+    }
     .card-grid {
         display: grid;
         justify-content: center;
@@ -74,6 +88,8 @@
 </style>
 
 <main class="game-table">
+    <h1>Concentration</h1>
+    <h2># of Flips: {$concentrationStore.flipCount}</h2>
     <div class="card-grid">
         {#each $concentrationStore.cards as card, index}
             <Card
