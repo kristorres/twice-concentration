@@ -42,6 +42,8 @@
     <p>
         <span class="material-icons">code</span> with
         <span class="material-icons pink">favorite</span> by a
-        <a href="mailto:kristorresdayo@gmail.com">ONCE</a>.
+        <a href="mailto:kristorresdayo@gmail.com">ONCE</a>. If you have any
+        feature requests or suggestions, please email me. I’ll be more than
+        happy to implement and add them ASAP. Thanks.
     </p>
 </footer>

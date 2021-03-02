@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@axel669/immutable-update": "^1.0.2",
     "svelte": "^3.32.3"
   },
   "devDependencies": {
