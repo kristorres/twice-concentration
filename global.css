@@ -1,0 +1,22 @@
+:root {
+    color-scheme: light dark;
+
+    --twice-pink: #FF4081;
+
+    --theme-primary: var(--twice-pink);
+    --theme-surface: white;
+    --theme-text-on-surface: black;
+
+    --font-text: Rubik, -apple-system, BlinkMacSystemFont, ui-sans-serif, system-ui, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --theme-surface: #424242;
+        --theme-text-on-surface: white;
+    }
+}
