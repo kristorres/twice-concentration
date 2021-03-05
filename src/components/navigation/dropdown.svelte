@@ -22,7 +22,7 @@
         right: 30px;
         background-color: var(--theme-surface);
         border-radius: 8px;
-        width: 300px;
+        width: 240px;
         padding: 16px 0;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
     }
@@ -66,6 +66,7 @@
         font-family: var(--font-text);
         font-size: 20px;
         font-weight: 400;
+        font-variant-ligatures: none;
         letter-spacing: 0.5px;
         color: var(--theme-text-on-surface);
         margin: 0;
@@ -76,6 +77,11 @@
     .material-icons {
         font-size: 32px;
         color: var(--theme-text-on-surface);
+    }
+    @media (min-width: 360px) {
+        .dropdown {
+            width: 300px;
+        }
     }
 
     @media (prefers-color-scheme: dark) {
