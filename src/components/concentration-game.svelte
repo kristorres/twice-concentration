@@ -54,7 +54,7 @@
     .game-table {
         flex: 1;
         background-color: #309B5D;
-        padding: 32px;
+        padding: 32px 24px;
     }
     h1 {
         font-family: Bungee, "Helvetica Neue", sans-serif;
@@ -93,12 +93,22 @@
     .card-grid {
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(auto-fit, 125px);
-        grid-auto-rows: 175px;
+        grid-template-columns: repeat(auto-fit, 100px);
+        grid-auto-rows: 140px;
         grid-gap: 16px;
         background-color: #66CD8B;
         border-radius: 8px;
-        padding: 32px;
+        padding: 16px;
+    }
+    @media (min-width: 420px) {
+        .game-table {
+            padding: 32px;
+        }
+        .card-grid {
+            grid-template-columns: repeat(auto-fit, 125px);
+            grid-auto-rows: 175px;
+            padding: 32px;
+        }
     }
 
     @media (prefers-color-scheme: dark) {

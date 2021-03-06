@@ -1,7 +1,7 @@
 {
   "name": "twice-concentration",
   "description": "The classical card game that revolves around Twice.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "@axel669/immutable-update": "^1.0.2",

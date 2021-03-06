@@ -10,6 +10,8 @@ Twice Concentration
     </a>
 </p>
 
+![twice-concentration](resources/twice-concentration.gif)
+
 The classical card game that revolves around Twice. 😍
 
 Building and Running Locally
