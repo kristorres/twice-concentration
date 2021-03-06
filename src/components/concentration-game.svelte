@@ -93,8 +93,8 @@
     .card-grid {
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(auto-fit, 62.5px);
-        grid-auto-rows: 87.5px;
+        grid-template-columns: repeat(auto-fit, 100px);
+        grid-auto-rows: 140px;
         grid-gap: 16px;
         background-color: #66CD8B;
         border-radius: 8px;
